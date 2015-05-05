@@ -48,12 +48,14 @@ function getInput(e){
             myText= myText.substring(0, myText.length-4);
         }else if (prompt.indexOf(myText.substring(myText.length-prompt.length, myText.length)) !== -1){
             //do nothing for now I guess.
-        }else {
+        }else if (isEscapee(myText.substring(myText.length-1, myText.length), escapees)){
+            myText= myText.substring(0, myText.length-2);
+        } else {
         myText = myText.substring(0, myText.length - 1);
     }
     } else {
         if (isEscapee(key, escapees)){
-            myText= myText+String.fromCharCode(key);
+            myText= myText+String.fromCharCode(key)+"&zwnj;";
         }
             else{
 		myText = myText+String.fromCharCode(key);
