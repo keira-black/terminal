@@ -1,2 +1,3 @@
 # terminal
-Its a terminal program, with a terminal in a div, blinking cursor and all, a part I need for the interface for a game thing I want to try and make.
+just an html page and some js, with a terminal thing that has a blinky cursor and takes text. Still playing with it, not happy yet. 
+Part of a game I want to make at some point.
