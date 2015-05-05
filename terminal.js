@@ -47,7 +47,7 @@ function getInput(e){
         if (specials.indexOf(myText.substring(myText.length-4, myText.length)) !== -1){
             myText= myText.substring(0, myText.length-4);
         }else if (prompt.indexOf(myText.substring(myText.length-prompt.length, myText.length)) !== -1){
-            myText= myText.substring(0, myText.length-prompt.length);
+            //do nothing for now I guess.
         }else {
         myText = myText.substring(0, myText.length - 1);
     }
