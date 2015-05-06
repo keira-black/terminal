@@ -38,6 +38,7 @@ function getInput(e){
 	var key = keyP(e);
 	if (key === 13){
 		myText= myText+"<br>"+prompt;
+        
 	}
     else if (key == 60){
         myText = myText+"&lt;";
@@ -60,9 +61,9 @@ function getInput(e){
             else{
 		myText = myText+String.fromCharCode(key);
     }
-    $(".terminal").scrollTop($(".terminal").scrollTop - $(".terminal").scrollHeight);
-	}
 
+	}
+    $("#terminal").scrollTop($("#terminal")[0].scrollHeight);
 }
 
 function writeFlashOff(){
